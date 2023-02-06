@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Serial Tool</h1>
+
+      <p>Click 'Get' to get available serial ports.</p>
+
+      <div class="row">
+        <div>
+          <select name="port" id="send-port">
+            <option value="COM1">COM1</option>
+            <option value="COM2">COM2</option>
+            <option value="COM3">COM3</option>
+            <option value="COM4">COM4</option>
+            <option value="COM5">COM5</option>
+            <option value="COM6">COM6</option>
+            <option value="COM7">COM7</option>
+            <option value="COM8">COM8</option>
+            <option value="COM9">COM9</option>
+          </select>
+          <input id="send-input" placeholder="Enter send frame..." />
+          <button id="get-button" type="button">Get</button>
+          <button id="send-button" type="button">Send</button>
+        </div>
+      </div>
+
+      <p id="greet-msg"></p>
+    </div>
+  </body>
+</html>
